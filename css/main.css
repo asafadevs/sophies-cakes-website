@@ -30,6 +30,24 @@ nav{
     background-color: white;
 }
 
+ul.transition{
+    display: flex;
+    position: absolute;
+    z-index: 100000;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+ul.transition li{
+    transform: scaleY(0);
+    background-color: white;
+    width: 20%;
+}
+
 .nav-menu{
     transform: translateY(-100%);
 }
@@ -206,7 +224,7 @@ nav{
 
 .intro-text{
     font-size:28px;
-    padding-top: 20vh;
+    padding-top: 15vh;
     padding-left: 2em;
 }
 

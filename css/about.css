@@ -118,9 +118,8 @@ nav{
 }
 
 .my-story{
-    background-color: #fff2d0;
+    background-color: whitesmoke;
     width: 90%;
-    height: 57vh;
     margin-top: 5em;
     margin-bottom: 3em;
     margin-left: 5%;
@@ -152,23 +151,23 @@ nav{
 
 .story-text p{
     font-family: 'Marck Script', cursive;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 200;
     color: black;
 }
 
 .pic-container{
     width: 40%;
+    display: inline-block;
+    text-align: center;
     align-items: center;
-    justify-content: center;
-    padding-left: 2em;
-    padding-right: 2em;
 }
+
 .pic-container img{
-    height: 100%;
+    height: 70%;
     width: 300px;
     object-fit: cover;
-    float: right;
+    margin-top: 5em;
 }
 
 .mid-pic{
@@ -224,6 +223,7 @@ nav{
 }
 .contact{
     width: 50%;
+    margin-right: 2em;
 }
 
 .socials{
@@ -282,6 +282,8 @@ box-icon:hover{
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .company{
@@ -302,6 +304,22 @@ box-icon:hover{
     text-decoration: none;
     color: black;
     cursor: pointer;
+}
+
+.transition{
+    width: 100%;
+    height: 200vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 10000;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.flow{
+    transform: translateX(100%);
 }
 
 @media screen and (max-width: 780px) {
@@ -327,128 +345,6 @@ box-icon:hover{
         font-size: 65px;
         letter-spacing: 4px;
     }
-
-    
-.page-title h1{
-    font-size: 48px;
-    letter-spacing: 4px;
-}
-
-.my-story{
-    background-color: #fff2d0;
-    width: 90%;
-    height: 115vh;
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-}
-
-.story-text{
-    width: 100%;
-}
-
-.story-text p{
-    font-size: 22px;
-}
-
-.pic-container{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    padding-left: 1em;
-    padding-right: 1em;
-    
-}
-
-.pic-container img{
-    height: 370px;
-    width: 100%;
-    object-fit: cover;
-    margin: 0 auto;
-    margin-bottom: 1em;
-}
-
-.story-text h3{
-    font-size: 28px;
-
-}
-
-.mid-pic{
-    margin-top: 3em;
-    width: 100%;
-
-}
-
-.mid-pic img{
-    width: 100%;
-    height: 420px;
-    margin: 0 auto;
-}
-
-.line-btm{
-    width: 40%;
-}
-
-.btm-content{
-    padding: 4em;
-    display: flex;
-    flex-direction: column;
-}
-.contact{
-    width: 100%;
-}
-
-.socials{
-    width: 100%;
-}
-
-.contact h4{
-    font-size: 26px;
-}
-
-.contact p{
-    font-size: 16px;
-}
-
-.socials h4{
-    font-size: 26px;
-    margin-top: 1em;
-}
-
-.socials p{
-    font-size: 16px;
-}
-
-.social-links{
-    width: 50%;
-}
-
-
-.footer{
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-top: 0vh;
-    flex-direction: column;
-}
-
-.company{
-    width: 100%;
-}
-
-.developer{
-    width: 100%;
-}
-
-.footer a{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
-
-.bottom{
-    height: 108vh;
-}
-  
 }
 
 @media screen and (max-width: 900px) {
@@ -532,6 +428,131 @@ box-icon:hover{
     .nav-active{
         transform: translateX(-12%);
     }
+
+    .page-title h1{
+        font-size: 48px;
+        letter-spacing: 4px;
+    }
+    
+    .my-story{
+        background-color: whitesmoke;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+    
+    .story-text{
+        width: 100%;
+    }
+    
+    .story-text p{
+        font-size: 22px;
+    }
+    
+    .pic-container{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        
+    }
+    
+    .pic-container img{
+        height: 370px;
+        width: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+    
+    .story-text h3{
+        font-size: 28px;
+    
+    }
+    
+    .mid-pic{
+        margin-top: 3em;
+        width: 100%;
+    
+    }
+    
+    .mid-pic img{
+        width: 100%;
+        height: 420px;
+        margin: 0 auto;
+    }
+    
+    .line-btm{
+        width: 40%;
+    }
+    
+    .btm-content{
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .socials{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contact h4{
+        font-size: 26px;
+    }
+    
+    .contact p{
+        font-size: 16px;
+    }
+    
+    .socials h4{
+        font-size: 26px;
+        margin-top: 1em;
+    }
+    
+    .socials p{
+        font-size: 16px;
+    }
+    
+    .social-links{
+        margin: 0 auto;
+        width: 50%;
+    }
+    
+    
+    .footer{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-top: 0vh;
+        flex-direction: column;
+    }
+    
+    .company{
+        width: 100%;
+    }
+    
+    .developer{
+        width: 100%;
+    }
+    
+    .footer a{
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+    
+    .bottom{
+        height: 108vh;
+    }
+      
+
+    
 }
 
 @media screen and (max-width: 1024px) {
