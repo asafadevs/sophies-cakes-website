@@ -31,7 +31,7 @@ nav{
 }
 
 .nav-menu{
-    transform: translateY(0%);
+    transform: translateY(-100%);
 }
 
 .left-nav{

@@ -33,7 +33,7 @@ nav{
 }
 
 .nav-menu{
-    transform: translateY(0%);
+    transform: translateY(-100%);
 }
 
 .left-nav{
@@ -470,6 +470,7 @@ textarea{
         padding: 1em;
         padding-bottom: 1em;
         margin-top: 3em;
+        margin-bottom: 3em;
     }
     
     .form-container h3{
