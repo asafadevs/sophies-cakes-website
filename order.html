@@ -48,34 +48,34 @@
             <p>Please do not use this form for general inquiries, please call the bakery directly, or visit the <a href="contact.html">contact</a> page.</p>
             <div class="line2"></div>
 
-            <form action="">
+            <form method="POST" action="https://formspree.io/f/xqkgdkzr">
                 <div class="personal-details">
                     <div class="row">
                         <label for="fname">First Name:</label>
-                        <input type="text" id="fname" name="fname">
+                        <input type="text" id="fname" name="First Name">
                     </div>
                     <div class="row">
                         <label for="lname">Last Name:</label>
-                        <input type="text" id="lname" name="lname">
+                        <input type="text" id="lname" name="Last Name">
                     </div>
                     <div class="row">
                         <label for="email">Email:</label>
-                        <input type="text" id="email" name="email">
+                        <input type="text" id="email" name="Email">
                     </div>
                     <div class="row">
                         <label for="phone">Phone Number:</label>
-                        <input type="text" id="phone" name="phone">
+                        <input type="text" id="phone" name="Phone">
                     </div>
                     <div class="row">
                         <label for="pickup">Pick Up Date:</label>
-                        <input type="date" id="pickup" name="pickup">
+                        <input type="date" id="pickup" name="Pick Up Date">
                     </div>
                 </div>
 
                 <div class="order-details">
                     <div class="order-row">
                         <label>Flavour:</label>
-                        <select id = "flavour">
+                        <select id = "flavour" name="Flavour 1">
                             <option value = "_">_</option>
                             <option value = "Chocolate">Chocolate</option>
                             <option value = "Vanilla">Vanilla</option>
@@ -91,7 +91,7 @@
 
                     <div class="order-row">
                         <label>Quantity:</label>
-                        <select id = "quantity">
+                        <select id = "quantity" name="Quantity 1">
                             <option value = "0">0</option>
                             <option value = "1">1</option>
                             <option value = "2">2</option>
@@ -102,7 +102,7 @@
 
                     <div class="order-row">
                         <label>Flavour:</label>
-                        <select id = "flavour">
+                        <select id = "flavour" name="Flavour 2">
                             <option value = "_">_</option>
                             <option value = "Chocolate">Chocolate</option>
                             <option value = "Vanilla">Vanilla</option>
@@ -118,7 +118,7 @@
 
                     <div class="order-row">
                         <label>Quantity:</label>
-                        <select id = "quantity">
+                        <select id = "quantity" name="Quantity 2">
                             <option value = "0">0</option>
                             <option value = "1">1</option>
                             <option value = "2">2</option>
@@ -129,7 +129,7 @@
 
                     <div class="message">
                         <label>Description:</label>
-                        <textarea name="message" rows="10" cols="30">
+                        <textarea name="message" name="Message" rows="10" cols="30">
                             
                         </textarea>
                     </div>
