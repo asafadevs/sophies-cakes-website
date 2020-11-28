@@ -343,6 +343,9 @@ box-icon:hover{
         width: 100%;
     }
 
+    .bottom{
+        height: auto;
+    }
  
 }
 
