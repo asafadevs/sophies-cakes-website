@@ -335,6 +335,13 @@ box-icon:hover{
         margin: 0 auto;
     }
 
+    .page-title h1{
+        padding-left: 0em;
+    }
+
+    .pic-container img{
+        width: 100%;
+    }
 
  
 }
