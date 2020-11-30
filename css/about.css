@@ -354,7 +354,7 @@ box-icon:hover{
 
     .left-nav a{
         position: fixed;
-        top: 7vh;
+        top: 5.5vh;
         left: 1.5em;
         font-family: 'Great Vibes', cursive;
         font-size: 35px;
@@ -418,7 +418,7 @@ box-icon:hover{
         position: fixed;
         background-color: white;
         top: 0;
-        width: 101%;
+        width: 100%;
         height: 100vh;
         display: flex;
         text-align: center;
@@ -433,9 +433,11 @@ box-icon:hover{
     }
 
     .page-title h1{
-        font-size: 48px;
+        font-size: 40px;
         letter-spacing: 4px;
+        padding-left: 1em;
     }
+    
     
     .my-story{
         background-color: whitesmoke;
@@ -507,20 +509,20 @@ box-icon:hover{
     }
     
     .contact h4{
-        font-size: 26px;
+        font-size: 28px;
     }
     
     .contact p{
-        font-size: 16px;
+        font-size: 20px;
     }
     
     .socials h4{
-        font-size: 26px;
+        font-size: 28px;
         margin-top: 1em;
     }
     
     .socials p{
-        font-size: 16px;
+        font-size: 20px;
     }
     
     .social-links{
@@ -547,6 +549,7 @@ box-icon:hover{
         text-decoration: none;
         color: black;
         cursor: pointer;
+        font-size: 16px;
     }
     
       
