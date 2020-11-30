@@ -156,12 +156,13 @@ nav{
     height: 70vh;
     background: url('img/order-bg.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     text-align: left;
     align-items: center;
     justify-content: left;
     margin-bottom: 4em;
+    object-fit: cover;
 }
+
 
 .bottom{
     width: 100%;
