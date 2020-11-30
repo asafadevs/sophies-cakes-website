@@ -246,6 +246,8 @@ ul.transition li{
         padding-left: 2em;
     }
 
+    
+
     nav{
         height: 18vh;
     }
@@ -332,7 +334,7 @@ ul.transition li{
 
     .left-nav a{
         position: fixed;
-        top: 7vh;
+        top: 5.5vh;
         left: 1.5em;
         font-family: 'Great Vibes', cursive;
         font-size: 35px;
@@ -414,7 +416,7 @@ ul.transition li{
 @media screen and (max-width: 1024px) {
     .left-nav a{
         position: fixed;
-        top: 7vh;
+        top: 5.5vh;
         left: 1.5em;
         font-family: 'Great Vibes', cursive;
         font-size: 35px;

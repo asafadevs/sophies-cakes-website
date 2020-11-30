@@ -10,6 +10,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 
 main{
@@ -37,36 +38,88 @@ nav{
 }
 
 .left-nav{
-    width: 25%;
+    width: 60%;
+    background-color: white;
+}
 
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15%;
+    display: block;
+    transition:  all .5s ease-in-out;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
 }
 
 .left-nav a{
-    position: fixed;
-    top: 6.5vh;
-    left: 1.5em;
-    font-family: 'Great Vibes', cursive;
-    font-size: 40px;
-    color: black;
-    font-weight: 400;
-    text-decoration: none;
+        position: fixed;
+        top: 5.5vh;
+        left: 1.5em;
+        font-family: 'Great Vibes', cursive;
+        font-size: 35px;
+        color: black;
+        font-weight: 400;
+        text-decoration: none;
+        justify-content: space-evenly;
 }
 
 .right-nav{
-    width: 75%;
+    width: 100%;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     float: right;
+    background-color:white;
 }
 
 .nav-links{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
+        position: fixed;
+        background-color:white;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        padding-bottom: 2em;
+        justify-content: space-evenly;
+}
+
+.line{
+    width: 30px;
+    background-color: #dab572;
+    height: 3px;
+    margin-bottom: 5px;
+    transition:  all .5s ease-in-out;
+}
+
+.line::before,
+.line::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    background-color: #dab572;
+    height: 3px;
+    margin-bottom: 5px;
+    transition:  all .5s ease-in-out;
+}
+
+.line::before{
+    transform: translateY(-8px);
+    margin-left: -15px;
+}
+
+.line::after{
+    transform: translateY(8px);
+    margin-left: -15px;
 }
 
 .nav-links li{
@@ -94,28 +147,8 @@ nav{
     border-bottom: 1px solid #dab572;
 }
 
-.page-title{
-    width: 100%;
-}
-
-.page-title h1{
-    font-size: 68px;
-    padding-top: 35vh;
-    padding-left: 2em;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: black;
-}
-
-.form-container a{
-    text-decoration: none;
-    color: #dab572;
-}
-
-
-.form-container a:hover{
-    border-bottom: 1px solid #dab572;
+.nav-active{
+    transform: translateX(-12%);
 }
 
 .header{
@@ -157,28 +190,31 @@ nav{
 .line-btm{
     height: 3px;
     background-color: #dab572;
-    width: 20%;
+    width: 40%;
     margin: 0 auto;
 }
 
 .btm-content{
     padding: 4em;
     display: flex;
+    flex-direction: column;
 }
+
 .contact{
-    width: 50%;
-    margin-right: 2em;
-    text-align: left;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 3em;
 }
 
 .socials{
-    width: 50%;
-    text-align: left;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 3em;
 }
 
 .contact h4{
     font-family: 'Poppins', sans-serif;
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: 3px;
     font-weight: 400;
     text-transform: uppercase;
@@ -187,13 +223,13 @@ nav{
 
 .contact p{
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 200;
 }
 
 .socials h4{
     font-family: 'Poppins', sans-serif;
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: 3px;
     font-weight: 400;
     text-transform: uppercase;
@@ -202,13 +238,13 @@ nav{
 
 .socials p{
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 200;
     justify-content: space-around;
 }
 
 .social-links{
-    width: 30%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: left;
@@ -223,6 +259,7 @@ box-icon:hover{
     background-color: #dab572;
     color: black;
     display: flex;
+    flex-direction: column;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -230,17 +267,17 @@ box-icon:hover{
 }
 
 .company{
-    width: 50%;
-    float: left;
+    width: 100%;
     padding: 1em;
     text-align: center;
+    font-size: 16px;
 }
 
 .developer{
-    width: 50%;
-    float: left;
+    width: 100%;
     padding: 1em;
     text-align: center;
+    font-size: 16px;
 }
 
 .footer a{
@@ -249,47 +286,47 @@ box-icon:hover{
     cursor: pointer;
 }
 
-.transition{
-    width: 100%;
-    height: 200vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    z-index: 10000;
-    background-color: white;
-    overflow-x: hidden;
+
+.page-title h1{
+    font-size: 40px;
+    padding-top: 37vh;
+    padding-left: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: black;
 }
 
-.flow{
-    transform: translateX(100%);
+.page-title{
+    width: 100%;
 }
 
 .order-info{
-    width: 90%;
-    background-color: whitesmoke;
-    text-align: center;
-    padding: 2em;
-    padding-bottom: 2em;
-    margin: 0 auto;
+    width: 100%;
+    background-color: white
+}
+
+.form-container a{
+    text-decoration: none;
+    color: #dab572;
 }
 
 .order-info h3{
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 500;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 1em;
+    padding-bottom: 1em;
 }
 
 .order-info p{
     font-family: 'Marck Script', cursive;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 200;
     color: black;
-    margin-top: 0em;
-    margin-bottom: 1em;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .line2{
@@ -297,7 +334,8 @@ box-icon:hover{
     height: 3px;
     width: 30%;
     margin: 0 auto;
-    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
 .form-container{
@@ -307,12 +345,12 @@ box-icon:hover{
     padding: 2em;
     padding-bottom: 2em;
     margin: 0 auto;
-    margin-top: 4em;
+    margin-top: 2em;
 }
 
 
 .form-container h3{
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 500;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -321,7 +359,7 @@ box-icon:hover{
 
 .form-container p{
     font-family: 'Marck Script', cursive;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 200;
     color: black;
     margin-top: 1em;
@@ -340,7 +378,7 @@ form{
 }
 
 .row{
-    width: 33%;
+    width: 100%;
     padding: 1em;
     float: left;
     display: flex;
@@ -368,7 +406,7 @@ input[type="date"]{
 }
 
 input[type="submit"]{
-    width: 20%;
+    width: 40%;
     height: 3em;
     border: none;
     font-family: 'Poppins', sans-serif;
@@ -407,7 +445,7 @@ label{
 }
 
 .order-row{
-    width: 50%;
+    width: 100%;
     padding: 1em;
     float: left;
     display: flex;
@@ -434,501 +472,4 @@ textarea{
 .submit{
     width: 100%;
     padding: 1em;
-}
-
-
-@media screen and (min-width: 500px) {
-
-    .page-title h1{
-        font-size: 48px;
-        padding-top: 40vh;
-    }
-
-    .order-info{
-        padding: 1em;
-        padding-bottom: 1em;
-    }
-    
-    .order-info h3{
-        font-size: 28px;
-    }
-    
-    .order-info p{
-        font-size: 20px;
-    }
-    
-    .line2{
-        width: 40%;
-    }
-    
-    .form-container{
-        padding: 1em;
-        padding-bottom: 1em;
-        margin-top: 3em;
-    }
-    
-    .form-container h3{
-        font-size: 28px;
-    }
-    
-    .form-container p{
-        font-size: 20px;
-    }
-
-    
-    .row{
-        width: 100%;
-    }
-    
-    input[type="text"]{
-        font-size: 14px;
-    }
-    
-    input[type="date"]{
-        font-size: 14px;
-    }
-    
-    input[type="submit"]{
-        font-size: 14px;
-        width: 50%;
-    }
-    
-    select{
-        font-size: 14px;
-    }
-    
-    label{
-        font-size: 14px;
-    }
-    
-    textarea{
-        font-size: 14px;
-        text-justify: auto;
-    }
-    
-    .submit{
-        width: 100%;
-        padding: 1em;
-    }
-
-    
-
-    .page-title h1{
-        font-size: 48px;
-        letter-spacing: 4px;
-    }
-
-    .line-btm{
-        width: 40%;
-    }
-    
-    .btm-content{
-        padding: 4em;
-        display: flex;
-        flex-direction: column;
-    }
-    .contact{
-        width: 100%;
-        text-align: center;
-    }
-    
-    .socials{
-        width: 100%;
-        text-align: center;
-    }
-    
-    .contact h4{
-        font-size: 26px;
-    }
-    
-    .contact p{
-        font-size: 16px;
-    }
-    
-    .socials h4{
-        font-size: 26px;
-        margin-top: 1em;
-    }
-    
-    .socials p{
-        font-size: 16px;
-    }
-    
-    .social-links{
-        margin: 0 auto;
-        width: 50%;
-    }
-    
-    
-    .footer{
-        padding-top: 1em;
-        padding-bottom: 1em;
-        margin-top: 0vh;
-        flex-direction: column;
-    }
-    
-    .company{
-        width: 100%;
-    }
-    
-    .developer{
-        width: 100%;
-    }
-    
-    .footer a{
-        text-decoration: none;
-        color: black;
-        cursor: pointer;
-    }
-
-}
-
-@media screen and (min-width: 800px) {
-
-
-    .btm-content{
-        flex-direction: row;   
-    }
-
-    .contact{
-        width: 50%;
-        text-align: left;
-    }
-    
-    .socials{
-        width: 50%;
-        text-align: left;
-    }
-
-    .socials h4{
-        margin-top: 0em;
-    }
-    .order-info{
-        padding: 2em;
-    }
-    
-    .order-info h3{
-        font-size: 38px;
-    }
-    
-    .order-info p{
-
-        font-size: 25px;
-    }
-    
-    .line2{
-        width: 30%;
-    }
-    
-    .form-container{
-        padding: 2em;
-        padding-bottom: 2em;
-        margin-top: 4em;
-    }
-    
-    
-    .form-container h3{
-        font-size: 38px;
-        font-weight: 500;
-    }
-    
-    .form-container p{
-        font-size: 25px;
-    }
-    
-    .row{
-        width: 50%;
-
-    }
-    
-    input[type="text"]{
-        font-size: 16px;
-    }
-    
-    input[type="date"]{
-        font-size: 16px;
-    }
-    
-    input[type="submit"]{
-        font-size: 16px;
-    }
-    
-    input[type="submit"]:hover{
-        background-color: #d4bb8c;
-    }
-    
-    select{
-        font-size: 16px;
-    }
-    
-    label{
-        font-size: 18px;
-    }
-    
-    .order-details{
-        width: 100%;
-        text-align: left;
-    }
-    
-    .order-row{
-        width: 50%;
-        padding: 1em;
-        float: left;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .message{
-        width: 100%;
-        padding: 1em;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    textarea{
-        max-width: 100%;
-        min-width: 100%;
-        border: 2px solid #dab572;
-        border-radius: 5px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-    }
-    
-    .submit{
-        width: 100%;
-        padding: 1em;
-    }
-
-    
-}
-
-@media screen and (max-width: 990px) {
-    .left-nav a{
-        position: fixed;
-        top: 7vh;
-        left: 1.5em;
-        font-family: 'Great Vibes', cursive;
-        font-size: 35px;
-        color: black;
-        font-weight: 400;
-        text-decoration: none;
-    }
-
-    .hamburger{
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 15%;
-        display: block;
-        transition:  all .5s ease-in-out;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        width: 80px;
-        height: 80px;
-    }
-
-    .line{
-        width: 30px;
-        background-color: #dab572;
-        height: 3px;
-        margin-bottom: 5px;
-        transition:  all .5s ease-in-out;
-    }
-
-    .line::before,
-    .line::after{
-        content: '';
-        position: absolute;
-        width: 30px;
-        background-color: #dab572;
-        height: 3px;
-        margin-bottom: 5px;
-        transition:  all .5s ease-in-out;
-    }
-
-    .line::before{
-        transform: translateY(-8px);
-        margin-left: -15px;
-    }
-
-    .line::after{
-        transform: translateY(8px);
-        margin-left: -15px;
-    }
-
-    .right-nav a{
-        color: black;
-    }
-
-    .active a{
-        color: #dab572;
-    }
-
-    .nav-links{
-        position: fixed;
-        background-color: white;
-        top: 0;
-        width: 101%;
-        height: 100vh;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        padding-bottom: 2em;
-    }
-
-    .nav-active{
-        transform: translateX(-12%);
-    }
-
-    
-
-}
-
-@media screen and (min-width: 1024px) {
-
-    .row{
-        width: 33%;
-        padding: 1em;
-        float: left;
-        display: flex;
-        flex-direction: column;
-    }
-
-    input[type="submit"]{
-        width: 30%;
-    }
-
-    .bottom{
-        width: 100%;
-        background-color: black;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        margin-top: 4em;
-    }
-    
-    .btm-logo{
-        width: 100%;
-        text-align: center;
-        align-items: center;
-    }
-    
-    .btm-logo h3{
-        font-family: 'Great Vibes', cursive;
-        font-size: 40px;
-        font-weight: 200;
-        color: white;
-        margin-bottom: 0.5em;
-        margin-top: 1.5em;
-    }
-    
-    .line-btm{
-        height: 3px;
-        background-color: #dab572;
-        width: 20%;
-        margin: 0 auto;
-    }
-    
-    .btm-content{
-        padding: 4em;
-        display: flex;
-    }
-    .contact{
-        width: 50%;
-        margin-right: 2em;
-        text-align: left;
-    }
-    
-    .socials{
-        width: 50%;
-        text-align: left;
-    }
-    
-    .contact h4{
-        font-family: 'Poppins', sans-serif;
-        font-size: 36px;
-        letter-spacing: 3px;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: #dab572;
-    }
-    
-    .contact p{
-        font-family: 'Poppins', sans-serif;
-        font-size: 18px;
-        font-weight: 200;
-    }
-    
-    .socials h4{
-        font-family: 'Poppins', sans-serif;
-        font-size: 36px;
-        letter-spacing: 3px;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: #dab572;
-    }
-    
-    .socials p{
-        font-family: 'Poppins', sans-serif;
-        font-size: 18px;
-        font-weight: 200;
-        justify-content: space-around;
-    }
-    
-    .social-links{
-        width: 30%;
-        display: flex;
-        justify-content: space-evenly;
-        margin-left: 0px;
-    }
-    
-    box-icon:hover{
-        cursor: pointer;
-    }
-    
-    .footer{
-        background-color: #dab572;
-        color: black;
-        display: flex;
-        flex-direction: row;
-        margin-top: 9vh;
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        text-transform: uppercase;
-    }
-    
-    .company{
-        width: 50%;
-        float: left;
-        padding: 1em;
-        text-align: center;
-    }
-    
-    .developer{
-        width: 50%;
-        float: left;
-        padding: 1em;
-        text-align: center;
-    }
-    
-    .footer a{
-        text-decoration: none;
-        color: black;
-        cursor: pointer;
-    }
-
-    .page-title h1{
-        font-size: 68px;
-        padding-top: 35vh;
-        padding-left: 2em;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        color: black;
-    }
 }
