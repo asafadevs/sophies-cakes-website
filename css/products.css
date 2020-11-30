@@ -154,7 +154,6 @@ nav{
 .page-title h1{
     font-size: 48px;
     padding-top: 37vh;
-    padding-left: 2em;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -341,7 +340,7 @@ box-icon:hover{
 
 .order-info p{
     font-family: 'Marck Script', cursive;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 200;
     color: black;
     margin-top: 1em;
@@ -377,7 +376,7 @@ box-icon:hover{
 
 .form-container p{
     font-family: 'Marck Script', cursive;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 200;
     color: black;
     margin-top: 1em;
@@ -546,7 +545,7 @@ textarea{
     width: 80%;
     margin: 0 auto;
     font-family: 'Marck Script', cursive;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 200;
 }
 
