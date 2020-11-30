@@ -283,21 +283,28 @@ box-icon:hover{
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.transition{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10000000;
 }
 
 .company{
     width: 100%;
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     text-align: center;
     font-size: 16px;
 }
 
-.developer{
-    width: 100%;
-    padding: 1em;
-    text-align: center;
-    font-size: 16px;
-}
 
 .footer a{
     text-decoration: none;

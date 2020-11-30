@@ -256,6 +256,16 @@ box-icon:hover{
     cursor: pointer;
 }
 
+.transition{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10000000;
+}
+
 .footer{
     background-color: #dab572;
     color: black;
@@ -265,6 +275,8 @@ box-icon:hover{
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .company{
