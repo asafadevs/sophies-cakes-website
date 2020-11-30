@@ -335,16 +335,8 @@ box-icon:hover{
         margin: 0 auto;
     }
 
-    .page-title{
-        text-align: center;
-    }
-
     .pic-container img{
         width: 100%;
-    }
-
-    .bottom{
-        height: auto;
     }
  
 }
@@ -540,7 +532,6 @@ box-icon:hover{
     .footer{
         padding-top: 1em;
         padding-bottom: 1em;
-        margin-top: 0vh;
         flex-direction: column;
     }
     
@@ -558,9 +549,6 @@ box-icon:hover{
         cursor: pointer;
     }
     
-    .bottom{
-        height: 108vh;
-    }
       
 
     
