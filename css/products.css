@@ -82,7 +82,7 @@ nav{
         position: fixed;
         background-color:white;
         top: 0;
-        width: 100%;
+        width: 101%;
         height: 100vh;
         display: flex;
         text-align: center;
@@ -583,5 +583,5 @@ textarea{
 }
 
 .nav-active{
-    transform: translateX(-12%);
+    transform: translateX(-18%);
 }
