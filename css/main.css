@@ -14,7 +14,7 @@ body{
 
 main{
     width: 100%;
-    height: 70vh;
+    height: 125vh;
     background-color: white;
 }
 
@@ -54,7 +54,6 @@ ul.transition li{
 
 .left-nav{
     width: 25%;
-
 }
 
 .left-nav a{
@@ -118,7 +117,8 @@ ul.transition li{
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 5em;
 }
 
 .catch-phrase{
@@ -128,7 +128,7 @@ ul.transition li{
 
 .catch-phrase h2{
     font-family: 'Great Vibes', cursive;
-    font-size: 55px;
+    font-size: 50px;
     color: #dab572;
     font-weight: 200;
 }
@@ -142,7 +142,7 @@ ul.transition li{
     padding-bottom: 0.0em;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 75px;
+    font-size: 65px;
     letter-spacing: 5px;
 }
 
@@ -152,6 +152,11 @@ ul.transition li{
     font-weight: 200;
     padding-bottom: 1.5em;
     color: black;
+}
+
+.intro p{
+    width: 80%;
+    margin: 0 auto;
 }
 
 
@@ -192,7 +197,7 @@ ul.transition li{
 .line2{
     background-color: #dab572;
     height: 3px;
-    width: 30%;
+    width: 35%;
     margin: 0 auto;
     margin-bottom: 1.5em;
 }
@@ -223,7 +228,7 @@ ul.transition li{
 }
 
 .intro-text{
-    font-size:28px;
+    font-size:20px;
     padding-top: 15vh;
     padding-left: 2em;
 }
@@ -231,103 +236,12 @@ ul.transition li{
 .hide{
     background-color: white;
     overflow: hidden;
+    padding-top: 1em;
 }
 
 .hide span{
     transform: translateY(100%);
     display: inline-block;
-}
-
-@media screen and (max-width: 780px) {
-    
-    .intro-text{
-        font-size:18px;
-        margin-top: 8%;
-        padding-left: 2em;
-    }
-
-    
-
-    nav{
-        height: 18vh;
-    }
-
-    .landing{
-        height: 110vh;
-    }
-
-    .catch-phrase{
-        max-width: 100%;
-        padding-top: 13em;
-    }
-
-    .catch-phrase h2{
-
-        font-size: 45px;
-    }
-       
-    .name h1{
-        font-weight: 200;
-        font-size: 25px;
-        letter-spacing: 3px;
-        width: 75%;
-        margin: 0 auto;
-    }
-    
-    .intro{
-        font-size: 20px;
-    }
-
-    .intro p{
-        width: 75%;
-        margin: 0 auto;
-    }
-    
-    
-    #discover-btn{
-        width: 150px;
-        padding: 10px 10px;
-        text-transform: uppercase;
-        font-size: 13px;
-    }
-    
-    #order-btn{
-        width: 150px;
-        padding: 10px 10px;
-        font-size: 13px;
-    }
-}
-
-@media screen and (max-width: 800px) {
- 
-    .catch-phrase h2{
-
-        font-size: 45px;
-    }
-       
-    .name h1{
-        font-weight: 600;
-        font-size: 65px;
-        letter-spacing: 4px;
-    }
-    
-    .intro{
-        font-size: 22px;
-    }
-    
-    
-    #discover-btn{
-        width: 150px;
-        padding: 10px 10px;
-        text-transform: uppercase;
-        font-size: 13px;
-    }
-    
-    #order-btn{
-        width: 150px;
-        padding: 10px 10px;
-        font-size: 13px;
-    }
 }
 
 @media screen and (max-width: 900px) {
@@ -413,15 +327,14 @@ ul.transition li{
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .left-nav a{
-        position: fixed;
-        top: 5.5vh;
-        left: 1.5em;
-        font-family: 'Great Vibes', cursive;
-        font-size: 35px;
-        color: black;
-        font-weight: 400;
-        text-decoration: none;
+
+@media screen and (min-width: 1020px) {
+
+    .line2{
+        width: 20%;
+    }
+
+    .name h1{
+        font-size: 70px;
     }
 }
