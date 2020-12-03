@@ -267,6 +267,8 @@ ul.transition li{
         font-weight: 700;
         font-size: 40px;
         letter-spacing: 5px;
+        width: 70%;
+        margin: 0 auto;
     }
 }
 
