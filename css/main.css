@@ -244,6 +244,32 @@ ul.transition li{
     display: inline-block;
 }
 
+
+
+
+@media screen and (max-width: 500px){
+
+    .left-nav a{
+        position: fixed;
+        top: 6.5vh;
+        left: 1.5em;
+        font-family: 'Great Vibes', cursive;
+        font-size: 30px;
+        color: black;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .name h1{
+        padding-top: 0.2em;
+        padding-bottom: 0.0em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+}
+
 @media screen and (max-width: 900px) {
 
     .left-nav a{
@@ -326,7 +352,6 @@ ul.transition li{
         transform: translateX(-12%);
     }
 }
-
 
 @media screen and (min-width: 1020px) {
 

@@ -460,6 +460,19 @@ textarea{
     z-index: 10000000;
 }
 
+@media screen and (max-width: 500px){
+    .left-nav a{
+        position: fixed;
+        top: 6.5vh;
+        left: 1.5em;
+        font-family: 'Great Vibes', cursive;
+        font-size: 30px;
+        color: black;
+        font-weight: 400;
+        text-decoration: none;
+    }
+}
+
 @media screen and (min-width: 720px) {
 
     .item{
@@ -469,6 +482,11 @@ textarea{
 
     .products{
         padding-left: 4.5em; 
+    }
+
+    iframe{
+        height: 500px;
+        width: 500px;
     }
 }
 
@@ -592,6 +610,12 @@ textarea{
     }
 }
 
+@media screen and (max-width: 500px){
+    iframe{
+        width: 400px;
+        height: 400px;
+    }
+}
 
 @media screen and (min-width: 1020px) {
 
