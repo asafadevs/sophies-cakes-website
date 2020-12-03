@@ -128,7 +128,7 @@ ul.transition li{
 
 .catch-phrase h2{
     font-family: 'Great Vibes', cursive;
-    font-size: 50px;
+    font-size: 40px;
     color: #dab572;
     font-weight: 200;
 }
@@ -360,5 +360,12 @@ ul.transition li{
         color: black;
         border: none;
         cursor: pointer;
+    }
+
+    .catch-phrase h2{
+        font-family: 'Great Vibes', cursive;
+        font-size: 50px;
+        color: #dab572;
+        font-weight: 200;
     }
 }
