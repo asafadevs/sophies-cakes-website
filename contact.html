@@ -1,121 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="shortcut icon" href="css/icons/logo.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="shortcut icon" href="css/icons/logo.jpg" />
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
     <title>Sophies Cakes - Contact</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <main class="home-page">
-        <nav class="nav-menu">
-            <div class="left-nav">
-                <a href="index.html">Sophie's Cakes</a>
-            </div>
-            <div class="right-nav">
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="order.html">Order</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="hamburger"> 
-                    <div class="line"></div>
-                </div>
-            </div>
-        </nav>
-
-        <div class="header">
-                <div class="page-title">
-                    <h1>Contact</h1>
-                </div>
+      <nav class="nav-menu">
+        <div class="left-nav">
+          <a href="index.html">Sophie's Cakes</a>
         </div>
-
-        <div class="order-info">
-            <h3>Any Inquiries? Get In Touch with me</h3>
-            <div class="line2"></div>
+        <div class="right-nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li class="navli"><a href="gallary.html">Gallary</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <div class="line"></div>
+          </div>
         </div>
+      </nav>
 
-        <div class="form-container">
-
-            <form class="contact-form" method="POST" action="https://formspree.io/f/mwkwwzlz">
-                <div class="personal-details">
-                    <div class="row">
-                        <label for="fname">First Name:</label>
-                        <input type="text" autocomplete="off" class="fname" name="First Name">
-                    </div>
-                    <div class="row">
-                        <label for="lname">Last Name:</label>
-                        <input type="text" autocomplete="off" class="lname" name="Last Name">
-                    </div>
-                    <div class="row">
-                        <label for="email">Email:</label>
-                        <input type="text" autocomplete="off" class="email" name="Email">
-                    </div>
-                </div>
-
-                <div class="order-details">
-                    <div class="message">
-                        <label>Message:</label>
-                        <textarea name="Message" autocomplete="off" class="dmessage" rows="10" cols="30">
-                            
-                        </textarea>
-                    </div>
-
-                    <div class="submit">
-                        <input type="submit" value="Send Message">
-                    </div>
-                </div>
-            </form>
+      <div class="header">
+        <div class="page-title">
+          <h1>Contact</h1>
         </div>
+      </div>
 
-        <div class="order-info">
-            <h3>LOCATION</h3>
-            <div class="line-btm"></div>
-            <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9683.189474837398!2d25.93002215512961!3d-24.620312030329853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb5b4f05d7e3f7%3A0x6b8daf31f3e81176!2s15575%20Ntimbale%2C%20Gaborone!5e0!3m2!1sen!2sbw!4v1605776486568!5m2!1sen!2sbw" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-        </div>
+      <div class="order-info">
+        <h3>Any Inquiries? Get In Touch with me</h3>
+        <div class="line2"></div>
+      </div>
 
-        <div class="bottom">
-            <div class="btm-logo">
-                <h3>Sophie's Cakes</h3>
-                <div class="line-btm"></div>
+      <div class="form-container">
+        <form
+          class="contact-form"
+          method="POST"
+          action="https://formspree.io/f/mwkwwzlz"
+        >
+          <div class="personal-details">
+            <div class="row">
+              <label for="fname">First Name:</label>
+              <input
+                type="text"
+                autocomplete="off"
+                class="fname"
+                name="First Name"
+              />
             </div>
-            <div class="btm-content">
-                <div class="contact">
-                    <h4>CONTACT</h4>
-                    <br>
-                    <p>Address: 15575 Ntimbale Cre. Extension 44, Gaborone</p>
-                    <p>Email: sofimimak@gmail.com</p>
-                    <p>Phone: +267 74 563 378</p>
-                </div>
-                <div class="socials">
-                    <h4>Follow Me</h4>
-                    <br>
-                    <p>Follow me on all my socials and stay updated.</p>
-                    <br>
-                    <div class="social-links">
-                        <box-icon name='instagram-alt' type='logo' color='#dab572' size='lg' ></box-icon>
-                        <box-icon name='facebook-square' type='logo' color='#dab572' size='lg' ></box-icon>
-                        <box-icon name='twitter' type='logo' color='#dab572' size='lg'></box-icon>
-                    </div>
-                </div>
+            <div class="row">
+              <label for="lname">Last Name:</label>
+              <input
+                type="text"
+                autocomplete="off"
+                class="lname"
+                name="Last Name"
+              />
             </div>
-            <div class="footer">
-                <p class="company"> &#169; Copyright Sophie's Cakes</p>
+            <div class="row">
+              <label for="email">Email:</label>
+              <input
+                type="text"
+                autocomplete="off"
+                class="email"
+                name="Email"
+              />
             </div>
+          </div>
+
+          <div class="order-details">
+            <div class="message">
+              <label>Message:</label>
+              <textarea
+                name="Message"
+                autocomplete="off"
+                class="dmessage"
+                rows="10"
+                cols="30"
+              >
+              </textarea>
+            </div>
+
+            <div class="submit">
+              <input type="submit" value="Send Message" />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="order-info">
+        <h3>LOCATION</h3>
+        <div class="line-btm"></div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1066.1583562485368!2d31.044746370557146!3d-17.774374643201213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931af858a0350b9%3A0xaaa85dff14479e39!2zMTfCsDQ2JzI2LjUiUyAzMcKwMDInNDEuOCJF!5e0!3m2!1sen!2szw!4v1631215879759!5m2!1sen!2szw"
+            width="400"
+            height="300"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
         </div>
+      </div>
+
+      <div class="bottom">
+        <div class="btm-logo">
+          <h3>Sophie's Cakes</h3>
+          <div class="line-btm"></div>
+        </div>
+        <div class="btm-content">
+          <div class="contact">
+            <h4>CONTACT</h4>
+            <br />
+            <p>Address: 1 Lorna Rd, Mt. Pleasant, Harare</p>
+            <p>Email: sofimimak@gmail.com</p>
+            <p>Phone: +263 772811216</p>
+          </div>
+          <div class="socials">
+            <h4>Follow Me</h4>
+            <br />
+            <p>Follow me on all my socials and stay updated.</p>
+            <br />
+            <div class="social-links">
+              <box-icon
+                name="instagram-alt"
+                type="logo"
+                color="#dab572"
+                size="lg"
+              ></box-icon>
+              <box-icon
+                name="facebook-square"
+                type="logo"
+                color="#dab572"
+                size="lg"
+              ></box-icon>
+              <box-icon
+                name="twitter"
+                type="logo"
+                color="#dab572"
+                size="lg"
+              ></box-icon>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p class="company">&#169; Copyright Sophie's Cakes</p>
+        </div>
+      </div>
     </main>
 
     <div class="transition"></div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/pagetrans.js"></script>
     <script src="js/nav.js"></script>
-</body>
+  </body>
 </html>
