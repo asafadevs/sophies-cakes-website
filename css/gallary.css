@@ -124,6 +124,40 @@ nav {
   z-index: 10000000;
 }
 
+.gallary {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.gallary-grid {
+  padding: 2em 2em;
+  margin: 0 auto;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.gimg-container {
+  float: left;
+  width: 30%;
+  height: 300px;
+  margin-left: 3.33%;
+  margin-bottom: 4vh;
+  overflow: hidden;
+}
+
+.gimg-container img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gimg-container:hover img {
+  transform: scale(120%);
+}
+
 .bottom {
   width: 100%;
   background-color: black;
