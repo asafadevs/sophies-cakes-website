@@ -143,13 +143,15 @@ nav {
 .gimg-container {
   float: left;
   width: 30%;
-  height: 300px;
+  height: 400px;
   margin-left: 3.33%;
   margin-bottom: 4vh;
   overflow: hidden;
 }
 
 .gimg-container img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -429,6 +431,15 @@ box-icon:hover {
     font-size: 40px;
     letter-spacing: 4px;
     padding-left: 1em;
+  }
+
+  .gimg-container {
+    float: left;
+    width: 45%;
+    height: 40vh;
+    margin-left: 5%;
+    margin-bottom: 4vh;
+    overflow: hidden;
   }
 
   .line-btm {
